@@ -1,0 +1,15 @@
+@layer base {
+  .copyright {
+    @apply bg-black
+    text-center
+    text-white/50
+    text-base
+    font-lead;
+  }
+
+  .copyright span {
+    @apply py-4
+    block
+    w-full;
+  }
+}

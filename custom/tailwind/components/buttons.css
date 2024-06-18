@@ -1,0 +1,84 @@
+@layer components {
+  .btn {
+    @apply relative z-[1] overflow-hidden inline-block align-middle cursor-pointer py-3 px-6 lg:px-9 text-base text-center !leading-none font-lead font-bold no-underline select-none border border-solid transition ease-in-out duration-500 focus:outline-none focus:ring focus:ring-offset-1 focus:ring-opacity-50 disabled:opacity-75 disabled:cursor-not-allowed whitespace-nowrap;
+  }
+
+  .btn-dark {
+    @apply bg-dark-grey-4
+    font-normal 
+    text-white 
+    border-dark-grey-4 
+    lg:py-5
+    hover:bg-dark-grey-1 
+    hover:text-white 
+    hover:border-dark-grey-1 
+    focus:bg-dark-grey-1 
+    focus:text-white 
+    focus:border-dark-grey-1 
+    focus:ring-dark-grey-1 
+    active:bg-dark-grey-1/50 
+    active:border-dark-grey-1/50;
+  }
+
+  .btn-outline {
+    @apply border-primary 
+    text-dark-grey-4
+    
+    before:absolute
+    before:-z-[1]
+    before:top-0
+    before:left-0
+    before:right-1/2
+    before:bottom-0
+    before:-translate-x-[87%]
+    before:-translate-y-[68%]
+    before:bg-primary/20 
+    before:transition
+    before:ease-in-out
+    before:duration-500
+    before:hover:translate-x-0
+    before:hover:translate-y-0  
+    before:hover:bg-primary
+
+    after:absolute
+    after:-z-[1]
+    after:top-0
+    after:left-1/2
+    after:bottom-0
+    after:right-0
+    after:translate-x-[87%]
+    after:translate-y-[68%]
+    after:bg-primary/20 
+    after:transition
+    after:ease-in-out
+    after:duration-500
+    after:hover:translate-x-0
+    after:hover:translate-y-0  
+    after:hover:bg-primary  
+
+  hover:text-white
+  [&_small]:hover:text-white/60
+  [&_i]:hover:text-white
+  [&_i]:hover:bg-white/50
+    [&_i]:hover:shadow-[inset_0_0_0_3px_rgb(20,160,157)]
+  [&_i]:hover:border-white
+
+  focus:bg-primary
+  focus:border-primary/50 
+  focus:ring-primary/50
+  focus:text-white
+  [&_small]:focus:text-white/60
+  [&_i]:focus:text-white
+  [&_i]:focus:bg-white/50
+    [&_i]:focus:shadow-[inset_0_0_0_3px_rgb(20,160,157)]
+  [&_i]:focus:border-white
+  
+  active:bg-primary/50 
+  active:border-primary/50
+  active:ring-primary/50;
+  }
+
+  .btn-block {
+    @apply w-full;
+  }
+}

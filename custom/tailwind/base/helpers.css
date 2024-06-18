@@ -1,0 +1,29 @@
+@layer base {
+  .heading-lines {
+    @apply leading-none
+    inline-block
+    relative
+    pr-5
+    before:inline-block
+    before:w-12
+    before:h-[2px]
+    before:bg-dark-red
+    before:absolute
+    before:top-1
+    before:left-3
+
+    after:inline-block
+    after:w-12
+    after:h-[2px]
+    after:bg-dark-red;
+  }
+
+  .heading-lines--center {
+    @apply before:left-1/2
+    before:-translate-x-1/2;
+  }
+
+  .sticky-footer {
+    @apply fixed left-0 bottom-0 w-full z-20;
+  }
+}

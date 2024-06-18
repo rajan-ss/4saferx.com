@@ -1,0 +1,35 @@
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-lead font-[var(--headings-font-weight)] text-[var(--headings-color)] !leading-[var(--headings-line-height)] mb-[var(--headings-margin-bottom)];
+  }
+
+  h1,
+  .h1 {
+    @apply text-4xl xl:text-[length:var(--h1-font-size)] !leading-[1.4];
+  }
+  h2,
+  .h2 {
+    @apply text-3xl xl:text-[length:var(--h2-font-size)];
+  }
+  h3,
+  .h3 {
+    @apply text-[length:var(--h3-font-size)];
+  }
+  h4,
+  .h4 {
+    @apply text-[length:var(--h4-font-size)];
+  }
+  h5,
+  .h5 {
+    @apply text-[length:var(--h5-font-size)];
+  }
+  h6,
+  .h6 {
+    @apply text-[length:var(--h6-font-size)];
+  }
+}
