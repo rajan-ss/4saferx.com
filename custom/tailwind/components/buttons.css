@@ -60,7 +60,7 @@
   [&_small]:hover:text-white/60
   [&_i]:hover:text-white
   [&_i]:hover:bg-white/50
-    [&_i]:hover:shadow-[inset_0_0_0_3px_rgb(20,160,157)]
+    [&_i]:hover:shadow-[inset_0_0_0_3px_#00508e]
   [&_i]:hover:border-white
 
   focus:bg-primary
@@ -70,7 +70,7 @@
   [&_small]:focus:text-white/60
   [&_i]:focus:text-white
   [&_i]:focus:bg-white/50
-    [&_i]:focus:shadow-[inset_0_0_0_3px_rgb(20,160,157)]
+    [&_i]:focus:shadow-[inset_0_0_0_3px_#00508e]
   [&_i]:focus:border-white
   
   active:bg-primary/50 

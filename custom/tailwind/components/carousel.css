@@ -56,5 +56,5 @@
 
 .slick-dots li.slick-active button {
   @apply bg-primary
-	shadow-[0_0_0_4px_rgb(20,160,157,1)];
+	shadow-[0_0_0_4px_#00508e];
 }
